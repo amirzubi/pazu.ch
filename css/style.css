@@ -1,0 +1,275 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+
+html {
+  background: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0 0 80px rgba(192, 219, 255, 0.48),
+    0 0 32px rgba(65, 120, 255, 0.24);
+  font-size: 80px;
+  margin: 40px 0;
+  letter-spacing: -2px;
+  font-weight: 700;
+}
+
+h2 {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0 0 80px rgba(192, 219, 255, 0.48),
+    0 0 32px rgba(65, 120, 255, 0.24);
+  font-size: 40px;
+  line-height: 45px;
+  margin-bottom: 20px;
+  font-weight: 800;
+  letter-spacing: -1.6px;
+  padding-top: 50px;
+}
+
+h3 {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0 0 80px rgba(192, 219, 255, 0.48),
+    0 0 32px rgba(65, 120, 255, 0.24);
+  font-size: 20px;
+  margin: 0 0 5px 0;
+  font-weight: 600;
+  letter-spacing: -1.6px;
+}
+
+h4 {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0 0 80px rgba(192, 219, 255, 0.48),
+    0 0 32px rgba(65, 120, 255, 0.24);
+  font-size: 18px;
+  margin: 0 0 5px 0;
+  font-weight: 600;
+  letter-spacing: -1.6px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1rem;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: underline;
+}
+
+ul {
+  margin: 10px 0 10px 25px;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  margin-bottom: 50px;
+  max-width: 100%;
+  filter: drop-shadow(30px 20px 20px #00ae99);
+}
+
+.teaser {
+  padding: 0px 100px;
+  min-height: 100vh;
+  background: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: bottom right;
+}
+
+.intro {
+  padding-top: 100px;
+  width: 45%;
+}
+
+.description {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 22px;
+  line-height: 31px;
+  margin-bottom: 50px;
+}
+
+.content {
+  padding: 100px 100px 150px 100px;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.role {
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.main-button {
+  background: #00ae99;
+  padding: 18px 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-button:hover {
+  background: #009583;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.main-button a {
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.4px;
+  line-height: 16px;
+  font-size: 14px;
+}
+
+.second-button {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: none;
+  padding: 18px 30px;
+  margin-left: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.second-button:hover {
+  border: 1px solid rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.second-button a {
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.4px;
+  line-height: 16px;
+  font-size: 14px;
+}
+
+/* Row */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+}
+
+/* Columns */
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 100%;
+  margin: 12.5px;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.col.blank {
+  background-color: transparent;
+  width: 30%;
+  height: 0px;
+}
+
+/* Tags */
+.tags {
+  margin-top: 30px;
+}
+.tag {
+  border: 1px solid #ffffff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  line-height: 40px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+/* Footer */
+footer {
+  padding: 20px 100px 52px 100px;
+}
+
+.contact {
+  float: left;
+}
+
+.contact a {
+  font-size: 25px;
+}
+
+.social-media {
+  float: right;
+}
+
+.social-media a {
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .teaser {
+    min-height: 550px;
+    padding: 50px 30px;
+    background-size: 100%;
+    text-align: center;
+  }
+
+  .logo {
+    height: 70px;
+    display: block;
+    margin: 0 auto 50px auto;
+  }
+
+  .intro {
+    padding-top: 0px;
+    width: 20%;
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: 44px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 27px;
+  }
+
+  .intro {
+    width: 100%;
+  }
+  .description {
+    text-align: center;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .content {
+    padding: 50px 30px;
+  }
+
+  .col {
+    margin: 20px 0 0 0;
+    padding: 30px;
+    min-width: 80%;
+  }
+
+  .col.blank {
+    display: none;
+  }
+
+  .second-button {
+    margin: 10px 0 0 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+  }
+
+  footer {
+    padding: 30px 30px 60px 30px;
+  }
+}
