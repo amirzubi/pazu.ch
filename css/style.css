@@ -5,7 +5,7 @@
 }
 
 html {
-  background: #121212;
+  background: #181818;
   color: #ffffff;
   font-family: Arial, sans-serif;
 }
@@ -98,9 +98,34 @@ ul {
   margin-bottom: 50px;
 }
 
-.content {
+main {
   padding: 100px 100px 150px 100px;
   background-color: rgba(255, 255, 255, 0.15);
+}
+.portfolio {
+}
+
+.skills {
+}
+
+.skill-logo {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 6.25px;
+}
+
+.skill-logo:first-of-type {
+  margin-left: 0;
+}
+
+.skill-logo:last-of-type {
+  margin-right: 0;
+}
+
+img.skill-logo {
+  width: 40px;
+  height: auto;
+  max-height: 40px;
 }
 
 .role {
@@ -168,6 +193,18 @@ ul {
   margin: 12.5px;
   padding: 50px;
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.col:first-of-type {
+  margin-left: 0;
+}
+
+.col:last-of-type {
+  margin-right: 0;
+}
+
+span:last-of-type {
+  margin-right: 0;
 }
 
 .col.blank {
@@ -333,7 +370,7 @@ footer {
     line-height: 28px;
   }
 
-  .content {
+  main {
     padding: 0 30px 50px 30px;
   }
 
