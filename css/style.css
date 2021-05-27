@@ -212,24 +212,6 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-  .teaser {
-    min-height: 550px;
-    padding: 50px 30px;
-    background-size: 100%;
-    text-align: center;
-  }
-
-  .logo {
-    height: 70px;
-    display: block;
-    margin: 0 auto 50px auto;
-  }
-
-  .intro {
-    padding-top: 0px;
-    width: 20%;
-  }
-
   h1 {
     font-size: 40px;
     line-height: 44px;
@@ -242,10 +224,25 @@ footer {
     margin-bottom: 0px;
   }
 
+  .logo {
+    height: 70px;
+    display: block;
+    margin: 0 auto 50px auto;
+  }
+
+  .teaser {
+    min-height: 550px;
+    padding: 50px 30px;
+    background-size: 100%;
+    text-align: center;
+  }
+
   .intro {
+    padding-top: 0px;
     width: 100%;
     text-align: center;
   }
+
   .description {
     text-align: center;
     font-size: 20px;
@@ -256,6 +253,7 @@ footer {
     padding: 0 30px 50px 30px;
   }
 
+  /* Columns */
   .col {
     margin: 20px 0 0 0;
     padding: 30px;
@@ -266,6 +264,7 @@ footer {
     display: none;
   }
 
+  /* Buttons */
   .main-button {
     border: none;
     display: block;
@@ -277,6 +276,7 @@ footer {
     border: none;
   }
 
+  /* Footer */
   footer {
     padding: 30px 30px 60px 30px;
   }
