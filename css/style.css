@@ -184,9 +184,89 @@ ul {
   border: 1px solid #ffffff;
   padding: 5px 10px;
   border-radius: 20px;
-  line-height: 40px;
+  line-height: 30px;
   font-size: 14px;
   white-space: nowrap;
+}
+
+span.tag::before {
+  content: "•";
+  padding-right: 5px;
+  font-size: 30px;
+  position: relative;
+  top: 6px;
+}
+
+span.tag.adobe-xd::before {
+  color: #ff61f6;
+}
+
+span.tag.adobe-illustrator::before {
+  color: #ff9a00;
+}
+
+span.tag.adobe-indesign::before {
+  color: #ff3366;
+}
+
+span.tag.adobe-photoshop::before {
+  color: #2d9def;
+}
+
+span.tag.api::before {
+  color: #000000;
+}
+
+span.tag.css::before {
+  color: #0096dc;
+}
+
+span.tag.elementor::before {
+  color: #de2859;
+}
+
+span.tag.frontify::before {
+  color: #7f59ff;
+}
+
+span.tag.html::before {
+  color: #e44d26;
+}
+
+span.tag.javascript::before {
+  color: #f1e05a;
+}
+
+span.tag.klaviyo::before {
+  color: #24aa68;
+}
+
+span.tag.learndash::before {
+  color: #009de3;
+}
+
+span.tag.nudgify::before {
+  color: #3dd7cc;
+}
+
+span.tag.php::before {
+  color: #787cb4;
+}
+
+span.tag.python::before {
+  color: #3572a5;
+}
+
+span.tag.shopify::before {
+  color: #81c038;
+}
+
+span.tag.wordpress::before {
+  color: #2681a1;
+}
+
+span.tag.woocommerce::before {
+  color: #96588b;
 }
 
 /* Footer */
