@@ -213,6 +213,10 @@ span.tag.adobe-photoshop::before {
   color: #2d9def;
 }
 
+span.tag.apexcharts::before {
+  color: #008ffb;
+}
+
 span.tag.api::before {
   color: #000000;
 }
