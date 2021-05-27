@@ -243,6 +243,7 @@ footer {
 
   .intro {
     width: 100%;
+    text-align: center;
   }
   .description {
     text-align: center;
@@ -251,7 +252,7 @@ footer {
   }
 
   .content {
-    padding: 50px 30px;
+    padding: 0 30px 50px 0;
   }
 
   .col {
@@ -266,6 +267,8 @@ footer {
 
   .main-button {
     border: none;
+    display: block;
+    margin: 0 auto;
   }
   .second-button {
     margin: 10px 0 0 0;
