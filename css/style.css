@@ -29,7 +29,6 @@ h2 {
   margin-bottom: 30px;
   font-weight: 800;
   letter-spacing: -1.6px;
-  padding-top: 50px;
 }
 
 h3 {
@@ -40,6 +39,7 @@ h3 {
   margin: 0 0 5px 0;
   font-weight: 600;
   letter-spacing: -1.6px;
+  padding-top: 30px;
 }
 
 h4 {
@@ -101,6 +101,11 @@ ul {
 main {
   padding: 100px 100px 150px 100px;
   background-color: rgba(255, 255, 255, 0.15);
+}
+
+section.portfolio,
+section.skills {
+  padding-top: 50px;
 }
 .portfolio {
 }
