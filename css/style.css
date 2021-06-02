@@ -62,7 +62,7 @@ p {
 
 a {
   color: rgba(255, 255, 255, 0.8);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 ul {
@@ -107,11 +107,6 @@ section.portfolio,
 section.skills {
   padding-top: 50px;
 }
-.portfolio {
-}
-
-.skills {
-}
 
 .skill-logo {
   padding: 20px;
@@ -144,6 +139,13 @@ img.skill-logo {
   padding: 18px 30px;
   transition: all 0.3s ease-in-out;
   border: 1px solid #00ae99;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.4px;
+  line-height: 16px;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
 }
 
 .main-button:hover {
@@ -152,34 +154,25 @@ img.skill-logo {
   transition: all 0.3s ease-in-out;
 }
 
-.main-button a {
-  font-weight: 600;
-  text-decoration: none;
-  letter-spacing: 0.4px;
-  line-height: 16px;
-  font-size: 14px;
-}
-
 .second-button {
   border: 1px solid rgba(255, 255, 255, 0.4);
   background: none;
   padding: 18px 30px;
   margin-left: 20px;
   transition: all 0.3s ease-in-out;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.4px;
+  line-height: 16px;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
 }
 
 .second-button:hover {
   border: 1px solid rgba(255, 255, 255, 1);
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
-}
-
-.second-button a {
-  font-weight: 600;
-  text-decoration: none;
-  letter-spacing: 0.4px;
-  line-height: 16px;
-  font-size: 14px;
 }
 
 /* Row */
@@ -326,6 +319,7 @@ footer {
 
 .contact a {
   font-size: 25px;
+  text-decoration: underline;
 }
 
 .social-media {
