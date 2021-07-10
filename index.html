@@ -6,6 +6,12 @@
     <title>pazu.ch - think digital.</title>
 
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
     <script src="js/spin.js"></script>
   </head>
   <body>
@@ -35,9 +41,29 @@
       </div>
     </section>
     <main>
+      <!-- Portfolio -->
       <section class="portfolio" id="portfolio">
         <h2>Portfolio</h2>
-        <h3>Web Design</h3>
+        <div class="tab-bar">
+          <div class="tab-bar-item">
+            <a href="#web-design">
+              <i class="fas fa-laptop-code"></i>Web Design
+            </a>
+          </div>
+          <div class="tab-bar-item">
+            <a href="#mockups">
+              <i class="fas fa-object-group"></i>
+              Mockups
+            </a>
+          </div>
+          <div class="tab-bar-item">
+            <a href="#repositories">
+              <i class="fab fa-github"></i>
+              Repositories
+            </a>
+          </div>
+        </div>
+        <h3 id="web-design">Web Design</h3>
         <div class="row">
           <div class="col">
             <h4>Secondhandbags AG</h4>
@@ -255,7 +281,7 @@
           <div class="col blank"></div>
         </div>
 
-        <h3>Mockups</h3>
+        <h3 id="mockups">Mockups</h3>
         <div class="row">
           <div class="col">
             <h4>Interactive Prototype "think digital"</h4>
@@ -300,7 +326,7 @@
           <div class="col blank"></div>
         </div>
 
-        <h3>Repositories</h3>
+        <h3 id="repositories">Repositories</h3>
         <div class="row">
           <div class="col">
             <h4>Facebook Data Visualizer</h4>
@@ -494,10 +520,10 @@
     </div>
     <div class="social-media">
       <a href="https://www.linkedin.com/in/pascalamirzubi/" target="_blank">
-        <img src="img/icons/linkedin.svg" alt="LinkedIn" />
+        <i class="fab fa-linkedin"></i>
       </a>
       <a href="https://github.com/amirzubi?tab=repositories" target="_blank">
-        <img src="img/icons/github.svg" alt="Github" />
+        <i class="fab fa-github"></i>
       </a>
     </div>
   </footer>
