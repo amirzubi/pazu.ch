@@ -66,6 +66,8 @@ a {
 }
 
 a:hover,
+a:active,
+a.active,
 a:hover i {
   color: #00ae99;
 }
@@ -422,19 +424,20 @@ footer {
   position: sticky;
   top: 0;
   background-color: #181818;
-  padding: 20px;
+  padding: 20px 0 20px 0;
   z-index: 1;
+  display: inline-block;
 }
 
 .tab-bar-item {
   display: inline-block;
   margin: 0;
-  padding-right: 60px;
+  padding: 0 30px;
   font-size: 25px;
 }
 
 .tab-bar-item a {
-  font-weight: 500;
+  font-weight: 600;
   border-bottom: 2px solid #fff;
   margin: 0;
 }
@@ -457,12 +460,13 @@ footer {
     overflow-y: hidden;
     white-space: nowrap;
     position: sticky;
-    padding: 15px 0 15px 30px;
+    padding: 15px;
     margin: 20px -30px;
+    display: block;
   }
 
   .tab-bar-item {
     font-size: 20px;
-    padding-right: 30px;
+    padding: 0 15px;
   }
 }
