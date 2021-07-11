@@ -8,6 +8,7 @@ html {
   background: #181818;
   color: #ffffff;
   font-family: Arial, sans-serif;
+  scroll-padding-top: 50px;
 }
 
 h1 {
@@ -67,7 +68,6 @@ a {
 
 a:hover,
 a:active,
-a.active,
 a:hover i {
   color: #00ae99;
 }
@@ -198,6 +198,7 @@ img.skill-logo {
   margin: 12.5px;
   padding: 50px;
   background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
 }
 
 .col:first-of-type {
@@ -438,7 +439,7 @@ footer {
 
 .tab-bar-item a {
   font-weight: 600;
-  border-bottom: 2px solid #fff;
+  border-bottom: 1px solid #fff;
   margin: 0;
 }
 
@@ -450,7 +451,8 @@ footer {
 
 .tab-bar-item a:active,
 .tab-bar-item a:hover {
-  border-bottom: 2px solid #00ae99;
+  border-bottom: 1px solid #00ae99;
+  color: #00ae99;
   margin: 0;
 }
 
