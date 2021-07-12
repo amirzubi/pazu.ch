@@ -63,7 +63,7 @@ p {
 
 a {
   color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover,
@@ -327,8 +327,13 @@ footer {
 
 .contact a {
   font-size: 25px;
-  text-decoration: underline;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact a {
+    font-size: 20px;
+  }
 }
 
 .social-media {
@@ -440,7 +445,6 @@ footer {
 
 .tab-bar-item a {
   font-weight: 600;
-  border-bottom: 1px solid #fff;
   margin: 0;
 }
 
@@ -448,13 +452,6 @@ footer {
   width: auto;
   padding-right: 10px;
   color: #fff;
-}
-
-.tab-bar-item a:active,
-.tab-bar-item a:hover {
-  border-bottom: 1px solid #00ae99;
-  color: #00ae99;
-  margin: 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -469,7 +466,7 @@ footer {
   }
 
   .tab-bar-item {
-    font-size: 20px;
     padding: 0 15px;
+    font-size: 20px;
   }
 }
