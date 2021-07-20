@@ -96,6 +96,7 @@ ul {
 }
 
 .intro {
+  margin: auto 0px;
   padding-left: 100px;
   width: 45%;
 }
