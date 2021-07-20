@@ -4,6 +4,11 @@
   border: none;
 }
 
+::selection {
+  color: #fff;
+  background: #00ae99;
+}
+
 html {
   background: #181818;
   color: #ffffff;
@@ -37,10 +42,10 @@ h3 {
   text-shadow: 0 0 80px rgba(192, 219, 255, 0.48),
     0 0 32px rgba(65, 120, 255, 0.24);
   font-size: 25px;
-  margin: 0 0 5px 0;
+  margin: 0px 0 5px 0;
   font-weight: 600;
   letter-spacing: -1.6px;
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 h4 {
@@ -62,6 +67,7 @@ p {
 a {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: underline;
+  font-weight: 600;
 }
 
 a:hover,
@@ -83,8 +89,8 @@ ul {
 }
 
 .teaser {
-  padding: 0px 100px;
-  min-height: 100vh;
+  height: 100vh;
+  padding: 0 100px;
   background: url("../img/bg.png");
   background-repeat: no-repeat;
   background-size: 50%;
@@ -145,7 +151,7 @@ img.skill-logo {
 /* Buttons */
 .main-button {
   background: #00ae99;
-  padding: 18px 30px;
+  padding: 20px 40px;
   transition: all 0.3s ease-in-out;
   border: 1px solid #00ae99;
   font-weight: 600;
@@ -155,6 +161,7 @@ img.skill-logo {
   font-size: 14px;
   color: #fff;
   text-decoration: none;
+  border-radius: 4px;
 }
 
 .main-button:hover {
@@ -166,7 +173,7 @@ img.skill-logo {
 .second-button {
   border: 1px solid rgba(255, 255, 255, 0.4);
   background: none;
-  padding: 18px 30px;
+  padding: 20px 40px;
   margin-left: 20px;
   transition: all 0.3s ease-in-out;
   font-weight: 600;
@@ -176,6 +183,7 @@ img.skill-logo {
   font-size: 14px;
   color: #fff;
   text-decoration: none;
+  border-radius: 4px;
 }
 
 .second-button:hover {
@@ -200,7 +208,7 @@ img.skill-logo {
   margin: 12.5px;
   padding: 50px;
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 .col:first-of-type {
@@ -329,7 +337,6 @@ footer {
 
 .contact a {
   font-size: 25px;
-  font-weight: 600;
 }
 
 @media only screen and (max-width: 768px) {
@@ -356,6 +363,50 @@ footer {
   font-size: 30px;
 }
 
+/* Tab bar */
+.tab-bar {
+  margin: 30px 0 10px 0;
+  position: sticky;
+  top: -1px;
+  background-color: #181818;
+  padding: 20px 0 20px 0;
+  z-index: 1;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tab-bar-item {
+  display: inline-block;
+  margin: 0;
+  padding: 0 30px;
+  font-size: 25px;
+}
+
+.tab-bar-item a {
+  margin: 0;
+}
+
+.tab-bar-item i {
+  width: auto;
+  padding-right: 10px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1024px) {
+  .teaser {
+    padding: 0 50px;
+  }
+
+  .intro {
+    padding: 150px 0px;
+    width: 70%;
+  }
+
+  main {
+    padding: 0 50px 50px 50px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   h1 {
     font-size: 40px;
@@ -380,14 +431,13 @@ footer {
   }
 
   .teaser {
-    min-height: 550px;
-    padding: 50px 30px;
+    padding: 0 30px;
     background-size: 100%;
     text-align: center;
   }
 
   .intro {
-    padding-top: 0px;
+    padding: 50px 0;
     width: 100%;
     text-align: center;
   }
@@ -418,49 +468,21 @@ footer {
     border: none;
     display: block;
     margin: 0 auto;
+    width: 70%;
   }
   .second-button {
-    margin: 10px 0 0 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    margin: 15px 0 0 0;
+    background-color: rgba(0, 0, 0, 0.8);
     border: none;
+    width: 70%;
   }
 
   /* Footer */
   footer {
     padding: 30px 30px 60px 30px;
   }
-}
 
-/* Tab bar */
-.tab-bar {
-  margin: 30px 0 10px 0;
-  position: sticky;
-  top: 0;
-  background-color: #181818;
-  padding: 20px 0 20px 0;
-  z-index: 1;
-  display: inline-block;
-}
-
-.tab-bar-item {
-  display: inline-block;
-  margin: 0;
-  padding: 0 30px;
-  font-size: 25px;
-}
-
-.tab-bar-item a {
-  font-weight: 600;
-  margin: 0;
-}
-
-.tab-bar-item i {
-  width: auto;
-  padding-right: 10px;
-  color: #fff;
-}
-
-@media only screen and (max-width: 768px) {
+  /* Tab bar */
   .tab-bar {
     overflow-x: scroll;
     overflow-y: hidden;
@@ -469,6 +491,7 @@ footer {
     padding: 15px;
     margin: 20px -30px;
     display: block;
+    border-radius: 0px;
   }
 
   .tab-bar-item {
