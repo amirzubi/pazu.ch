@@ -67,6 +67,7 @@ p {
 a {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: underline;
+  font-weight: 600;
 }
 
 a:hover,
@@ -150,7 +151,7 @@ img.skill-logo {
 /* Buttons */
 .main-button {
   background: #00ae99;
-  padding: 18px 30px;
+  padding: 20px 40px;
   transition: all 0.3s ease-in-out;
   border: 1px solid #00ae99;
   font-weight: 600;
@@ -172,7 +173,7 @@ img.skill-logo {
 .second-button {
   border: 1px solid rgba(255, 255, 255, 0.4);
   background: none;
-  padding: 18px 30px;
+  padding: 20px 40px;
   margin-left: 20px;
   transition: all 0.3s ease-in-out;
   font-weight: 600;
@@ -336,7 +337,6 @@ footer {
 
 .contact a {
   font-size: 25px;
-  font-weight: 600;
 }
 
 @media only screen and (max-width: 768px) {
@@ -383,7 +383,6 @@ footer {
 }
 
 .tab-bar-item a {
-  font-weight: 600;
   margin: 0;
 }
 
@@ -469,11 +468,13 @@ footer {
     border: none;
     display: block;
     margin: 0 auto;
+    width: 70%;
   }
   .second-button {
-    margin: 10px 0 0 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    margin: 15px 0 0 0;
+    background-color: rgba(0, 0, 0, 0.8);
     border: none;
+    width: 70%;
   }
 
   /* Footer */
