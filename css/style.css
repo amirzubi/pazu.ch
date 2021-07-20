@@ -83,8 +83,7 @@ ul {
 }
 
 .teaser {
-  padding: 0px 100px;
-  min-height: 100vh;
+  padding: 100px 100px;
   background: url("../img/bg.png");
   background-repeat: no-repeat;
   background-size: 50%;
@@ -96,7 +95,6 @@ ul {
 }
 
 .intro {
-  padding-top: 100px;
   width: 45%;
 }
 
@@ -380,14 +378,14 @@ footer {
   }
 
   .teaser {
-    min-height: 550px;
-    padding: 50px 30px;
+    height: 100vh;
+    padding: 0 30px;
     background-size: 100%;
     text-align: center;
   }
 
   .intro {
-    padding-top: 0px;
+    padding: 50px 0;
     width: 100%;
     text-align: center;
   }
