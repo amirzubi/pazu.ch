@@ -209,6 +209,7 @@ img.skill-logo {
   padding: 50px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 4px;
+  position: relative;
 }
 
 .col:first-of-type {
@@ -229,9 +230,14 @@ span:last-of-type {
   height: 0px;
 }
 
+.col a {
+  position: absolute;
+  bottom: 50px;
+}
+
 /* Tags */
 .tags {
-  margin-top: 30px;
+  margin: 30px 0 50px 0;
 }
 .tag {
   border: 1px solid #ffffff;
@@ -337,12 +343,6 @@ footer {
 
 .contact a {
   font-size: 25px;
-}
-
-@media only screen and (max-width: 768px) {
-  .contact a {
-    font-size: 20px;
-  }
 }
 
 .social-media {
@@ -463,23 +463,31 @@ footer {
     display: none;
   }
 
+  .col a {
+    bottom: 30px;
+  }
+
   /* Buttons */
   .main-button {
     border: none;
     display: block;
     margin: 0 auto;
-    width: 70%;
+    width: 75%;
   }
   .second-button {
     margin: 15px 0 0 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     border: none;
-    width: 70%;
+    width: 75%;
   }
 
   /* Footer */
   footer {
     padding: 30px 30px 60px 30px;
+  }
+
+  .contact a {
+    font-size: 20px;
   }
 
   /* Tab bar */
