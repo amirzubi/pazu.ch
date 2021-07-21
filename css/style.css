@@ -476,6 +476,11 @@ footer {
     bottom: 30px;
   }
 
+  /* Tags */
+  span.tag {
+    font-size: 12px;
+  }
+
   /* Buttons */
   .main-button {
     border: none;
