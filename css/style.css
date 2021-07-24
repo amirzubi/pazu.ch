@@ -1,7 +1,15 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
   border: none;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 100%;
 }
 
 .contact-menu {
@@ -20,7 +28,7 @@
 
 html {
   background: #181818;
-  color: #ffffff;
+  color: #fff;
   font-family: Arial, sans-serif;
   scroll-padding-top: 50px;
 }
@@ -51,7 +59,7 @@ h3 {
   text-shadow: 0 0 80px rgba(192, 219, 255, 0.48),
     0 0 32px rgba(65, 120, 255, 0.24);
   font-size: 25px;
-  margin: 0px 0 5px 0;
+  margin: 0 0 5px;
   font-weight: 600;
   letter-spacing: -1.6px;
   padding-top: 50px;
@@ -60,7 +68,7 @@ h3 {
 h4 {
   color: rgba(255, 255, 255, 0.8);
   font-size: 20px;
-  margin: 0 0 5px 0;
+  margin: 0 0 5px;
   font-weight: 600;
   letter-spacing: -0.5px;
 }
@@ -68,7 +76,7 @@ h4 {
 h5 {
   color: rgba(255, 255, 255, 0.8);
   font-size: 16px;
-  margin: 30px 0 5px 0;
+  margin: 30px 0 5px;
   font-weight: 600;
   letter-spacing: -0.5px;
 }
@@ -76,7 +84,7 @@ h5 {
 p {
   font-size: 20px;
   line-height: 28px;
-  margin: 0px;
+  margin: 0;
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 1rem;
 }
@@ -108,7 +116,7 @@ ul {
 .teaser {
   height: 100vh;
   padding: 0 100px;
-  background: url("../img/bg.png");
+  background: url(../img/bg.png);
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: bottom right;
@@ -131,7 +139,7 @@ ul {
 }
 
 main {
-  padding: 100px 100px 150px 100px;
+  padding: 100px 100px 150px;
   background-color: rgba(255, 255, 255, 0.15);
 }
 
@@ -165,7 +173,6 @@ img.skill-logo {
   margin-bottom: 30px;
 }
 
-/* Buttons */
 .main-button {
   background: #00ae99;
   padding: 20px 40px;
@@ -209,14 +216,12 @@ img.skill-logo {
   transition: all 0.3s ease-in-out;
 }
 
-/* Row */
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0px;
+  margin: 0;
 }
 
-/* Columns */
 .col {
   flex-basis: 0;
   flex-grow: 1;
@@ -244,7 +249,7 @@ span:last-of-type {
 .col.blank {
   background-color: transparent;
   width: 30%;
-  height: 0px;
+  height: 0;
 }
 
 .col a {
@@ -252,9 +257,8 @@ span:last-of-type {
   bottom: 50px;
 }
 
-/* Tags */
 .tag {
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   padding: 5px 10px;
   border-radius: 20px;
   line-height: 30px;
@@ -283,7 +287,7 @@ span.tag.adobe-illustrator::before {
 }
 
 span.tag.adobe-indesign::before {
-  color: #ff3366;
+  color: #f36;
 }
 
 span.tag.adobe-photoshop::before {
@@ -295,7 +299,7 @@ span.tag.apexcharts::before {
 }
 
 span.tag.api::before {
-  color: #000000;
+  color: #000;
 }
 
 span.tag.css::before {
@@ -350,9 +354,8 @@ span.tag.woocommerce::before {
   color: #96588b;
 }
 
-/* Footer */
 footer {
-  padding: 20px 100px 52px 100px;
+  padding: 20px 100px 52px;
   background-color: #181818;
 }
 
@@ -382,13 +385,12 @@ footer {
   font-size: 30px;
 }
 
-/* Tab bar */
 .tab-bar {
-  margin: 30px 0 10px 0;
+  margin: 30px 0 10px;
   position: sticky;
   top: -1px;
   background-color: #181818;
-  padding: 20px 0 20px 0;
+  padding: 20px 0;
   z-index: 1;
   display: inline-block;
   border-radius: 4px;
@@ -417,12 +419,12 @@ footer {
   }
 
   .intro {
-    padding: 150px 0px;
+    padding: 150px 0;
     width: 70%;
   }
 
   main {
-    padding: 0 50px 50px 50px;
+    padding: 0 50px 50px;
   }
 }
 
@@ -458,7 +460,7 @@ footer {
 
   h2 {
     font-size: 27px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   h3 {
@@ -468,7 +470,7 @@ footer {
   .logo {
     height: 70px;
     display: block;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 50px;
   }
 
   .teaser {
@@ -492,12 +494,11 @@ footer {
   }
 
   main {
-    padding: 0 30px 50px 30px;
+    padding: 0 30px 50px;
   }
 
-  /* Columns */
   .col {
-    margin: 20px 0 0 0;
+    margin: 20px 0 0;
     padding: 30px;
     min-width: 80%;
   }
@@ -510,28 +511,26 @@ footer {
     bottom: 30px;
   }
 
-  /* Tags */
   span.tag {
     font-size: 12px;
   }
 
-  /* Buttons */
   .main-button {
     border: none;
     display: block;
     margin: 0 auto;
     width: 75%;
   }
+
   .second-button {
-    margin: 15px 0 0 0;
+    margin: 15px 0 0;
     background-color: rgba(0, 0, 0, 0.9);
     border: none;
     width: 75%;
   }
 
-  /* Footer */
   footer {
-    padding: 30px 30px 60px 30px;
+    padding: 30px 30px 60px;
     z-index: 99;
   }
 
@@ -539,7 +538,6 @@ footer {
     font-size: 20px;
   }
 
-  /* Tab bar */
   .tab-bar {
     overflow-x: scroll;
     overflow-y: hidden;
@@ -548,7 +546,7 @@ footer {
     padding: 15px;
     margin: 20px -30px;
     display: block;
-    border-radius: 0px;
+    border-radius: 0;
     z-index: 2;
   }
 
