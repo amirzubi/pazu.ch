@@ -1,3 +1,14 @@
+:root {
+  --black: #181818;
+  --bluegreen: #00ae99;
+  --bluegreen-darkened: #009583;
+  --darkgrey: #3a3a3a;
+  --lightgrey: #4e4e4e;
+  --text-shadow: rgba(192, 219, 255, 0.48);
+  --white: rgba(255, 255, 255, 0.8);
+  --white-darkened: rgba(255, 255, 255, 0.6);
+}
+
 * {
   border: 0;
   outline: 0;
@@ -12,13 +23,14 @@
   font-size: 100%;
 }
 
+.col.blank,
 .contact-menu {
   display: none;
 }
 
 ::selection {
-  color: #fff;
-  background: #00ae99;
+  color: var(--white);
+  background: var(--bluegreen);
 }
 
 #over {
@@ -27,16 +39,14 @@
 }
 
 html {
-  background: #181818;
-  color: #fff;
+  background: var(--black);
+  color: var(--white);
   font-family: Arial, sans-serif;
   scroll-padding-top: 50px;
 }
 
 h1 {
-  color: rgba(255, 255, 255, 0.8);
-  text-shadow: 0 0 80px rgba(192, 219, 255, 0.48),
-    0 0 32px rgba(65, 120, 255, 0.24);
+  text-shadow: 0 0 80px var(--text-shadow), 0 0 32px rgba(65, 120, 255, 0.24);
   font-size: 80px;
   margin: 40px 0;
   letter-spacing: -2px;
@@ -44,9 +54,7 @@ h1 {
 }
 
 h2 {
-  color: rgba(255, 255, 255, 0.8);
-  text-shadow: 0 0 80px rgba(192, 219, 255, 0.48),
-    0 0 32px rgba(65, 120, 255, 0.24);
+  text-shadow: 0 0 80px var(--text-shadow), 0 0 32px rgba(65, 120, 255, 0.24);
   font-size: 40px;
   line-height: 45px;
   margin-bottom: 30px;
@@ -55,18 +63,15 @@ h2 {
 }
 
 h3 {
-  color: rgba(255, 255, 255, 0.8);
-  text-shadow: 0 0 80px rgba(192, 219, 255, 0.48),
-    0 0 32px rgba(65, 120, 255, 0.24);
+  text-shadow: 0 0 80px var(--text-shadow), 0 0 32px rgba(65, 120, 255, 0.24);
   font-size: 25px;
-  margin: 0 0 5px;
+  margin: 0 0 20px;
   font-weight: 600;
   letter-spacing: -1.6px;
   padding-top: 50px;
 }
 
 h4 {
-  color: rgba(255, 255, 255, 0.8);
   font-size: 20px;
   margin: 0 0 5px;
   font-weight: 600;
@@ -74,7 +79,6 @@ h4 {
 }
 
 h5 {
-  color: rgba(255, 255, 255, 0.8);
   font-size: 16px;
   margin: 30px 0 5px;
   font-weight: 600;
@@ -85,12 +89,11 @@ p {
   font-size: 20px;
   line-height: 28px;
   margin: 0;
-  color: rgba(255, 255, 255, 0.8);
   margin-bottom: 1rem;
 }
 
 a {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--white);
   text-decoration: underline;
   font-weight: 600;
 }
@@ -98,7 +101,7 @@ a {
 a:hover,
 a:active,
 a:hover i {
-  color: #00ae99;
+  color: var(--bluegreen);
 }
 
 ul {
@@ -110,7 +113,7 @@ ul {
   width: auto;
   margin-bottom: 50px;
   max-width: 100%;
-  filter: drop-shadow(30px 20px 20px #00ae99);
+  filter: drop-shadow(30px 20px 20px var(--bluegreen));
 }
 
 .teaser {
@@ -132,7 +135,7 @@ ul {
 }
 
 .description {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--white-darkened);
   font-size: 22px;
   line-height: 31px;
   margin-bottom: 50px;
@@ -140,7 +143,7 @@ ul {
 
 main {
   padding: 100px 100px 150px;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: var(--darkgrey);
 }
 
 section.portfolio,
@@ -150,7 +153,7 @@ section.skills {
 
 .skill-logo {
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--darkgrey);
   margin: 6.25px;
 }
 
@@ -174,28 +177,28 @@ img.skill-logo {
 }
 
 .main-button {
-  background: #00ae99;
+  background: var(--bluegreen);
   padding: 20px 40px;
   transition: all 0.3s ease-in-out;
-  border: 1px solid #00ae99;
+  border: 1px solid var(--bluegreen);
   font-weight: 600;
   text-decoration: none;
   letter-spacing: 0.4px;
   line-height: 16px;
   font-size: 14px;
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
   border-radius: 4px;
 }
 
 .main-button:hover {
-  background: #009583;
+  background: var(--bluegreen);
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
 }
 
 .second-button {
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid var(--lightgrey);
   background: none;
   padding: 20px 40px;
   margin-left: 20px;
@@ -205,51 +208,29 @@ img.skill-logo {
   letter-spacing: 0.4px;
   line-height: 16px;
   font-size: 14px;
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
   border-radius: 4px;
 }
 
 .second-button:hover {
-  border: 1px solid rgba(255, 255, 255, 1);
+  border: 1px solid var(--white);
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 30px;
 }
 
 .col {
-  flex-basis: 0;
-  flex-grow: 1;
-  width: 100%;
-  max-width: 100%;
-  margin: 12.5px;
   padding: 50px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--lightgrey);
   border-radius: 4px;
   position: relative;
-}
-
-.col:first-of-type {
-  margin-left: 0;
-}
-
-.col:last-of-type {
-  margin-right: 0;
-}
-
-span:last-of-type {
-  margin-right: 0;
-}
-
-.col.blank {
-  background-color: transparent;
-  width: 30%;
-  height: 0;
 }
 
 .col a {
@@ -258,7 +239,7 @@ span:last-of-type {
 }
 
 .tag {
-  border: 1px solid #fff;
+  border: 1px solid var(--white);
   padding: 5px 10px;
   border-radius: 20px;
   line-height: 30px;
@@ -356,7 +337,7 @@ span.tag.woocommerce::before {
 
 footer {
   padding: 20px 100px 52px;
-  background-color: #181818;
+  background-color: var(--black);
 }
 
 .contact {
@@ -377,11 +358,11 @@ footer {
 }
 
 .social-media a:hover i {
-  color: #00ae99;
+  color: var(--bluegreen);
 }
 
 .social-media i {
-  color: rgba(255, 255, 255, 0.1);
+  color: var(--lightgrey);
   font-size: 30px;
 }
 
@@ -389,7 +370,7 @@ footer {
   margin: 30px 0 10px;
   position: sticky;
   top: -1px;
-  background-color: #181818;
+  background-color: var(--black);
   padding: 20px 0;
   z-index: 1;
   display: inline-block;
@@ -410,7 +391,7 @@ footer {
 .tab-bar-item i {
   width: auto;
   padding-right: 10px;
-  color: #fff;
+  color: var(--white);
 }
 
 @media only screen and (max-width: 1024px) {
@@ -425,6 +406,10 @@ footer {
 
   main {
     padding: 0 50px 50px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -445,10 +430,10 @@ footer {
   .contact-menu i {
     padding: 10px;
     font-size: 27px;
-    background-color: #181818;
+    background: var(--black);
     border-radius: 100%;
     margin: 0 7.5px;
-    filter: drop-shadow(0px 10px 20px #000);
+    filter: drop-shadow(0px 10px 20px var(--black));
   }
 
   h1 {
@@ -497,14 +482,13 @@ footer {
     padding: 0 30px 50px;
   }
 
-  .col {
-    margin: 20px 0 0;
-    padding: 30px;
-    min-width: 80%;
+  .grid {
+    grid-template-columns: 1fr;
   }
 
-  .col.blank {
-    display: none;
+  .col {
+    padding: 30px;
+    min-width: 80%;
   }
 
   .col a {
@@ -524,7 +508,7 @@ footer {
 
   .second-button {
     margin: 15px 0 0;
-    background-color: rgba(0, 0, 0, 0.9);
+    background: var(--black);
     border: none;
     width: 75%;
   }
