@@ -238,6 +238,15 @@ img.skill-logo {
   bottom: 50px;
 }
 
+.year {
+  padding: 7px 8px;
+  background-color: var(--black);
+  border-radius: 5px;
+  line-height: 50px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .tag {
   border: 1px solid var(--white);
   padding: 5px 10px;
@@ -289,6 +298,10 @@ span.tag.css::before {
 
 span.tag.elementor::before {
   color: #de2859;
+}
+
+span.tag.figma::before {
+  color: #a259ff;
 }
 
 span.tag.frontify::before {
@@ -500,7 +513,8 @@ footer {
     bottom: 30px;
   }
 
-  span.tag {
+  span.tag,
+  span.year {
     font-size: 12px;
   }
 
